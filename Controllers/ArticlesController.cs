@@ -51,7 +51,6 @@ namespace DM2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [ValidateInput(false)]
         public ActionResult Create([Bind(Include = "Id,URL,Fecha,Nombre,Body,ImgURL,IdUser,IdSection")] Articles articles)
         {
             if (ModelState.IsValid)
@@ -88,7 +87,6 @@ namespace DM2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [ValidateInput(false)]
         public ActionResult Edit([Bind(Include = "Id,URL,Fecha,Nombre,Body,ImgURL,IdUser,IdSection")] Articles articles)
         {
             if (ModelState.IsValid)
