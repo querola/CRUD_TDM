@@ -5,3 +5,10 @@
 .form-control{
     width: 100% !important;
 }
+
+.form-group-100{
+    width:100%;
+}
+.label-100{
+    width: 100%;
+}
